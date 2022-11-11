@@ -6,3 +6,13 @@
     align-items: center;
     justify-content: center;
 }
+
+.tarjetaPersonaje{
+    border-style: solid;
+    border-radius: 5px;
+  
+}
+
+.imgZ{
+    max-width: 20vh;
+}
