@@ -14,9 +14,10 @@ const navigate = useNavigate()
 
 //Card
   return (
-    <div onClick={detallePersonaje} className="estiloPersonaje">
+    <div onClick={detallePersonaje} className="estiloPersonaje" key={product.id}>
       <img src={product.imageUrl} alt="character"/>
-      <p key={product.id}>{product.name}, stock: {10}</p>
+      <p>Status:{product.status}</p>
+      <p>{product.name}, stock: {10}</p>
     </div>
   )
 }

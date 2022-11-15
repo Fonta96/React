@@ -3,9 +3,11 @@ import Detail from '../Detail'
 
 const ItemDetail = ({character}) => {
   return (
-    character.map(character => {
-        return <Detail character={character}/>
-    })
+    <p>item detail</p>
+    /*character.map(char => {
+        
+        return <Detail character={char}/>
+    })*/
     )
 }
 

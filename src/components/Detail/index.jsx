@@ -4,10 +4,10 @@ const Detail = ({character}) => {
 
 
   return (
-    /*<div>
+    <div>
       <img src={character.imageUrl} alt="character"/>
-      <p key={character.id}>{character.name},{character.specie},{character.role},{character.status},{character.universe},{character.transform},{character.originplanet} stock: {10}</p>
-    </div>*/ <h1>hola</h1>
+      <p>Name: {character.name}<br/>Specie: {character.specie}<br/>Role: {character.role}<br/>Status: {character.status}<br/>Universo:{character.universe},{character.transform},{character.originplanet} <br/>stock: {10}</p>
+    </div>
   )
 }
 

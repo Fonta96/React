@@ -16,7 +16,6 @@ export default function ItemListContainer({ greeting }) {
     useEffect(() => {
         (async () => {
             try {
-                console.log(categoryId + " < Este es el category ID");
                 console.log(`https://dragon-ball-super-api.herokuapp.com/api/characters/${categoryId}` + " <esta es la direccion que busca")
                 let response
                 if (categoryId) {
@@ -24,9 +23,7 @@ export default function ItemListContainer({ greeting }) {
                 } else {
                     response = await fetch(`https://dragon-ball-super-api.herokuapp.com/api/characters`);
                 }
-                console.log(response + " este es el response ");
                 const data = await response.json();
-                console.log(data + " <esta es la Data ")
                 setProducts(data)
             } catch (error) {
                 console.log(error);
@@ -46,27 +43,6 @@ export default function ItemListContainer({ greeting }) {
 }
 
 
-
-
-
-
-/*console.log(products + " <productos")
-let img = products.imageUrl
-console.log(img + " < esta es la img")
-return (
-
-    <>
-        <div className="item-list-container">
-            <div class="tarjetaPersonaje">
-                <img src={products.imageUrl} class="imgZ" />
-                <h2>{products.name}</h2>
-            </div>
-
-        </div>
-    </>
-)
-
-}*/
 
 
 

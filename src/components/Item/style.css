@@ -1,14 +1,16 @@
 .estiloPersonaje{
     display: flex;
-    padding: 50px;
-    height: 50%;
-    width: auto;
+    padding: 20px;
     flex-direction: column;
     border: solid 2px black;
     justify-content: center;
     align-items: center;
-    border-radius: 100px;
+    border-radius: 40px;
     box-shadow:3px 2px 2px 1px rgba(0, 0, 0, 0.5);
     text-shadow: 2px 2px 5px black;
     background:pink;
+}
+.estiloPersonaje>img{
+    max-width: 288px;
+    max-height: 400px;
 }
