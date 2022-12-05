@@ -10,10 +10,10 @@ const NavBar = () =>{
             <Link to="/">Home</Link>
         </li>
         <li>
-            <Link to="/category/status/Vivo">Vivo</Link>
+            <Link to="/category/Vivo">Vivo</Link>
         </li>
         <li>
-            <Link to="/category/status/Muerto">Muerto</Link>
+            <Link to="/category/Muerto">Muerto</Link>
         </li>
         <CartWidget />
     </ul>

@@ -25,10 +25,10 @@ const router = createBrowserRouter([
                 element: <ItemDetailContainer/>,
             },
 
-            {
+           /* {
                 path: "/category/status/:status",
-                element: <ItemsByStatus />,
-            },
+                element: <ItemsByStatus/>,
+            },*/
         ],
     },
 ]);

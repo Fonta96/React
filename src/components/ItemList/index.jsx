@@ -6,8 +6,11 @@ import "./style.css"
 const ItemList = ({ products }) => {
   return (
     <div className='cardsContainer'>{
-      products.map(product => {
-        return <Item product={product} />
+      products.map((product,i) => {
+        return <div key={i}>
+          <Item product={product}/>
+
+        </div>
       })}
     </div>
   )
